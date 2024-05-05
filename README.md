@@ -1,19 +1,23 @@
-- [Day1](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/edit/main/README.md#day1)
-- [Day2](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/edit/main/README.md#day2)
-- [Day3](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/edit/main/README.md#day3)
-- [Day4](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/edit/main/README.md#day4)
-- [Day5](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/edit/main/README.md#day5)
+- [Day1](#Day1)
+- [Day2](#Day2)
+- [Day3](#Day3)
+- [Day4](#Day4)
+- [Day5](#Day5)
 
+<a name="Day1"></a>
 # Day1
 
 ## How to talk to computers
 
 
-
+<a name="Day2"></a>
 # Day2
 
+<a name="Day3"></a>
 # Day3
 
+<a name="Day4"></a>
 # Day4
 
+<a name="Day5"></a>
 # Day5
