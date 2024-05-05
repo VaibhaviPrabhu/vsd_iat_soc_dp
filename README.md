@@ -1,3 +1,4 @@
+This report consists of 5 days workshop on RTL to GDS-II flow by VSD-IAT. Each day is documented, for the theory the screenshots are taken from the website and for the labs the screenshots are attached from the system used. <br>
 - [Day1](#Day1)
 - [Day2](#Day2)
 - [Day3](#Day3)
@@ -12,9 +13,9 @@
 |-
 ## SoC design and OpenLANE
 Digital ASIC design consists of RTL IP’s, EDA Tools and PDK files. <br>
-**RTL Design:** There are numerous RTL design open online sources like librecores.org, opencores.org, github.org, etc.  <br>
-**EDA Tools:** The EDA tools previously used was SPICE simulator, SIS, Magic, and many others. Now, the EDA tools used are Qflow, OpenROAD, OpenLANE.  <br>
-**PDK Files:** It is the Process Design Kit. It includes the process design rules, device models, digital standard cells, I/O libraries, … The first ever open source PDK was released by Google which is Skywater technology.  <br>
+**1. RTL Design:** There are numerous RTL design open online sources like librecores.org, opencores.org, github.org, etc.  <br>
+**2. EDA Tools:** The EDA tools previously used was SPICE simulator, SIS, Magic, and many others. Now, the EDA tools used are Qflow, OpenROAD, OpenLANE.  <br>
+**3. PDK Files:** It is the Process Design Kit. It includes the process design rules, device models, digital standard cells, I/O libraries, … The first ever open source PDK was released by Google which is Skywater technology.  <br>
 ![image](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/0c188475-be27-456b-aba5-0b0ee5178894)
 |-
 ![image](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/480c1cd6-186c-4b24-b0dd-087709b15f4a)
@@ -22,7 +23,7 @@ Digital ASIC design consists of RTL IP’s, EDA Tools and PDK files. <br>
 ![image](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/6f95c3a7-fd53-4cec-bf71-7452e5147f5a)
 |-
 ## Familiarization of EDA tools
--Design Preparation Steps: 
+- Design Preparation Steps: 
 ```
 cd tools/openlane_working_dir/openlane
 docker
@@ -136,6 +137,35 @@ In our design, flop ratio = 1613/14876 = 10.8429 %
 
 ![image](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/fffe3588-a1fd-44cc-ab32-c1ecfea6c3e8)
 |-
+#### Synthesis in OpenLANE
+```
+run_synthesis
+```
+![9](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/5b82948c-0f8f-44cd-bb58-5b49b69497d3)
+|-
+
+![10](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/04ac068d-0a69-42aa-a443-7488da8f5b67)
+|-
+
+### Floor Plan
+```
+run_floorplan
+```
+![11](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/63239290-a12b-453b-87ba-6dfb4271b60b)
+|-
+
+![12](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/b364bf5c-b89e-4e3b-b45f-39b2627815eb)
+|-
+
+![13](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/4f971da5-91ac-496a-8af0-f21c48ebefb0)
+|-
+
+To view the design in Magic we use the following command:
+```
+magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &
+```
+![14](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/d1f1e831-2cb5-45a7-9a51-2b206fee2145)
+|-
 
 ### Library Binding and Placement
 
@@ -155,6 +185,18 @@ In our design, flop ratio = 1613/14876 = 10.8429 %
 - Typical flow: Logic Synthesis ---> Floor Planning ---> Placement ---> Clock Tree Synthesis ---> Routing
 
 ![image](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/9500c19a-e269-46c0-857f-9bb0fd07257c)
+|-
+
+#### Placement
+```
+run_placement
+```
+To view the design in Magic we use the following command:
+```
+magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &
+``` 
+
+![15](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/6bcaac9c-8de3-4c01-afe2-ea104eb96405)
 |-
 
 ### Cell Design and Characterization Parameters
