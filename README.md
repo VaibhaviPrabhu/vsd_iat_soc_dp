@@ -239,7 +239,75 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 
 <a name="Day3"></a>
 # Day3
+### Labs for Inverter
+The specifications can be directly updated in the bash. An example is changing the distance between the cells.
 
+![image](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/c38d9b81-11cc-407d-8718-a7803724a935)
+|-
+
+![image](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/5ae4fa8e-c91e-49e3-875d-4a972cd6b091)
+|-
+
+![image](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/3e423339-591b-4102-81e9-923422247d9c)
+|-
+
+Link for Git Repository: [VSD_STD_Cell_Design](https://github.com/nickson-jose/vsdstdcelldesign) <br>
+Command for clone
+```
+git clone https://github.com/nickson-jose/vsdstdcelldesign.git
+```
+![18](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/419204e5-4920-4b9a-a471-1a8dba4a40cd)
+|-
+
+![19](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/15fc2eab-fb88-4ad9-8d3a-213670971bf0)
+|-
+
+### Layout and CMOS Fabrication
+
+![image](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/b49069ca-9a22-4340-bdba-d27ec6e68c94)
+|-
+
+![image](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/635846a6-5027-4783-a470-f7af751c6693)
+|-
+
+![image](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/a87b899e-121a-41ab-adbc-116a7301b731)
+|-
+
+![image](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/0c49d003-317a-4694-8237-4fec80a7183b)
+|-
+
+![image](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/f85269d1-3f20-4bb4-9b44-d1dc68cb163c)
+|-
+
+![image](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/0e0c13a3-e588-4739-8df4-c760e53feeaf)
+|-
+
+![image](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/e6221bb1-d3be-4902-b71c-4b5f3e43e629)
+|-
+
+![image](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/84670ef6-fc00-48e7-b733-88e61efe8a33)
+|-
+
+![image](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/c6cc1356-8b7c-474b-9ca9-85f51873d870)
+|-
+
+![image](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/882e6fb9-d013-4a59-90d7-bd5ed2692977)
+|-
+
+![image](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/1b7ec479-f9e8-440f-9a86-3894e9543526)
+|-
+
+![image](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/0ec8422f-c77d-4462-808b-fa17338517c4)
+|-
+
+![20](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/306ca7b9-e0e4-47a4-ab3f-282914e325ca)
+|-
+
+![21](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/df405089-faf7-417c-a28c-41b7cb5a99f5)
+|-
+
+![22](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/d2018cd6-38bd-4633-99b3-bf57cb4c0145)
+|-
 <a name="Day4"></a>
 # Day4
 
