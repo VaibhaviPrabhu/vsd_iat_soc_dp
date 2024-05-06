@@ -18,10 +18,13 @@ Digital ASIC design consists of RTL IP’s, EDA Tools and PDK files. <br>
 **3. PDK Files:** It is the Process Design Kit. It includes the process design rules, device models, digital standard cells, I/O libraries, … The first ever open source PDK was released by Google which is Skywater technology.  <br>
 ![image](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/0c188475-be27-456b-aba5-0b0ee5178894)
 |-
+
 ![image](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/480c1cd6-186c-4b24-b0dd-087709b15f4a)
 |-
+
 ![image](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/6f95c3a7-fd53-4cec-bf71-7452e5147f5a)
 |-
+
 ## Familiarization of EDA tools
 - Design Preparation Steps: 
 ```
@@ -308,6 +311,46 @@ git clone https://github.com/nickson-jose/vsdstdcelldesign.git
 
 ![22](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/d2018cd6-38bd-4633-99b3-bf57cb4c0145)
 |-
+
+### Labs
+Modify the spice file for the inverter as shown:
+
+![23](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/e3501fa2-e3f6-4edb-8d6b-03bad02c55a6)
+|-
+
+Run the spice tool using the command
+```
+ngspice sky130_inv.ngspice
+```
+
+![24](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/f01f0500-b0ef-4f98-9499-03f25e0d57eb)
+|-
+
+![25](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/dc28dabc-c734-4448-8c35-3451aab2a14b)
+|-
+
+![26](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/30b27924-2ab6-4330-9b52-231df3a6b06c)
+|-
+
+From the above figure, <br>
+- **1. Rise Time** = Time taken for input to 20% to 80% = (2.24 - 2.18)e-09 = 0.06e-09
+- **2. Propogation Time** = Time Taken from 50% input to 50% output = (2.20 - 2.15)e-09 = 0.05e-09
+
+   
+[Magic VLSI Tool](http://opencircuitdesign.com/magic/) <br>
+
+[Skywater PDK](https://github.com/google/skywater-pdk) <br>
+
+#### DRC Checks
+```
+wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz
+tar xfz drc_tests.tgz
+cd drc_tests
+magic -d XR
+```
+![27](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/f3c4c205-9996-45f3-8846-1936b72ec7e1)
+|-
+
 <a name="Day4"></a>
 # Day4
 
