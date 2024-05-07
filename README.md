@@ -409,6 +409,8 @@ run_placement
 ![image](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/673ae1d1-edb0-4029-8727-3f5012c85cdd)
 |-
 
+
+
 ### CTS and signal integrity
 
 ### Timing Analysis with real clocks with openSTA
