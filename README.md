@@ -354,5 +354,17 @@ magic -d XR
 <a name="Day4"></a>
 # Day4
 
+![28](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/ba0dccc6-5a0c-4a32-a430-29aa1c47d924)
+|-
+
+![29](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/84c04441-fa89-4c17-af61-c39253c2c65c)
+|-
+
+
+![image](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/b9bf7cb1-6630-4a0f-9b37-1d2d2a29f71a)
+|-
+
+
+
 <a name="Day5"></a>
 # Day5
