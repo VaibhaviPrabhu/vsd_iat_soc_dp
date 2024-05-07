@@ -354,17 +354,71 @@ magic -d XR
 <a name="Day4"></a>
 # Day4
 
+### Timing modelling using delay tables
 ![28](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/ba0dccc6-5a0c-4a32-a430-29aa1c47d924)
 |-
 
 ![29](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/84c04441-fa89-4c17-af61-c39253c2c65c)
 |-
 
+```
+prep -design picorv32a -tag <previous_file> -overwrite
 
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+add_lefs -src $lefs
+
+echo $::env(SYNTH_STRATEGY)
+
+set ::env(SYNTH_STRATEGY) "DELAY 3"
+
+echo $::env(SYNTH_BUFFERING)
+
+echo $::env(SYNTH_SIZING)
+
+set ::env(SYNTH_SIZING) 1
+
+echo $::env(SYNTH_DRIVING_CELL)
+
+run_synthesis
+run_floorplan
+run_placement
+```
+
+![30](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/32b83d63-f509-43e3-803e-e952a6371879)
+|-
+
+![31](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/85e7799c-5e69-4cf6-ae83-1ca61a13605f)
+|-
+
+![32](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/1b096073-4bcb-4a85-b96e-3de966913e12)
+|-
+
+![33](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/c2df4fb9-cd76-4195-890b-604e78f5b71e)
+|-
+
+### Timing Analysis with ideal clocks with openSTA
 ![image](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/b9bf7cb1-6630-4a0f-9b37-1d2d2a29f71a)
 |-
 
+![image](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/9a11ed3d-8fa4-48c5-ac3b-ca5819128a59)
+|-
+
+![image](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/4f273192-ec43-423d-a08c-90fc89dd9133)
+|-
+
+![image](https://github.com/VaibhaviPrabhu/vsd_iat_soc_dp/assets/144148368/673ae1d1-edb0-4029-8727-3f5012c85cdd)
+|-
+
+### CTS and signal integrity
+
+### Timing Analysis with real clocks with openSTA
 
 
 <a name="Day5"></a>
 # Day5
+
+### Routing and DRC
+
+### Power distribution networking and routing
+
+### TritonRoute Features
